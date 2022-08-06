@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 550;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+header {
+  background-color: #d9d9d9;
+  padding: 1rem;
+}
+
+nav {
+  background-color: #6289c2;
+}
+/* 導覽列變成橫式的改變display, ul前面的圓圈取消用list-style-type */
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: flex;
+}
+/* 導覽列文字顏色及取消底線 */
+nav ul li a {
+  color: rgb(196, 186, 186);
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  /* 設定游標放上去之後更改設定的完成秒數 */
+  transition: all 0.5s ease;
+}
+/*設定一個游標擺上去會有變化*/
+nav ul li a:hover {
+  background-color: white;
+  color: black;
+}
+
+.headerText {
+  font-size: 1rem;
+}
+
+.headerTitle {
+  font-size: 2.5rem;
+}
+/*以下是用flex做排版的部分*/
+main {
+  width: 100%;
+  display: flex;
+}
+
+section.left,
+section.right {
+  padding: 1.5rem;
+}
+
+section.right h4 {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+/*把googleMap置中的部分*/
+section.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.right p {
+  margin: 1rem;
+}
+
+.active {
+  color: white;
+}
